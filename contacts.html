@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="pfp.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - Terminal Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0C0C0C;
+            --text-color: #33FF33;
+            --cursor-color: #33FF33;
+            --prompt-color: #4CD2F0;
+            --highlight-color: #F7F7F7;
+            --link-color: #729FCF;
+            --button-bg: #1E1E1E;
+            --button-border: #33FF33;
+            --button-hover: #2A2A2A;
+            --font: 'Courier New', monospace;
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .terminal-container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            border: 2px solid var(--text-color);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .terminal-header {
+            background-color: var(--text-color);
+            color: var(--bg-color);
+            padding: 5px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .terminal-buttons {
+            display: flex;
+        }
+        
+        .terminal-button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 6px;
+            background-color: var(--bg-color);
+        }
+        
+        .terminal-title {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .terminal-content {
+            padding: 20px;
+            height: calc(100vh - 100px);
+            overflow-y: auto;
+        }
+        
+        .command-prompt {
+            color: var(--prompt-color);
+            margin-bottom: 20px;
+        }
+        
+        .contact-section {
+            margin-bottom: 20px;
+            border-left: 1px solid var(--text-color);
+            padding-left: 10px;
+        }
+        
+        .nav-button {
+            display: inline-block;
+            background-color: var(--button-bg);
+            border: 1px solid var(--button-border);
+            color: var(--text-color);
+            padding: 5px 12px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-family: var(--font);
+            transition: all 0.2s ease;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        
+        .nav-button:before {
+            content: "$ ";
+            color: var(--prompt-color);
+        }
+        
+        .nav-button:hover {
+            background-color: var(--button-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 2px 5px rgba(51, 255, 51, 0.2);
+        }
+        
+        .nav-button:active {
+            transform: translateY(0);
+            box-shadow: none;
+        }
+        
+        .contact-link {
+            display: inline-block;
+            background-color: var(--button-bg);
+            border: 1px solid var(--button-border);
+            color: var(--text-color);
+            padding: 8px 15px;
+            margin: 10px 10px 10px 0;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border-radius: 4px;
+        }
+        
+        .contact-link:hover {
+            background-color: var(--button-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 2px 5px rgba(51, 255, 51, 0.2);
+        }
+        
+        .contact-link:active {
+            transform: translateY(0);
+            box-shadow: none;
+        }
+        
+        @media (max-width: 600px) {
+            .terminal-container {
+                width: 95%;
+                margin: 10px auto;
+            }
+            
+            .terminal-content {
+                padding: 10px;
+                height: calc(100vh - 80px);
+            }
+            
+            .nav-button, .contact-link {
+                padding: 4px 8px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <div class="terminal-button"></div>
+                <div class="terminal-button"></div>
+                <div class="terminal-button"></div>
+            </div>
+            <div class="terminal-title">vjpd_@site:~/contacts</div>
+            <div></div>
+        </div>
+        
+        <div class="terminal-content">
+            <a href="site.html" class="nav-button">back</a>
+            
+            <div class="command-prompt">Connect with me:</div>
+            
+            <div class="contact-section">
+                <div class="command-prompt">$ contact links</div>
+                <a href="https://x.com/vjpd7_" target="_blank" class="contact-link">X (Twitter)</a>
+                <a href="mailto:vjpd2107@proton.me" class="contact-link">Email</a>
+                <a href="https://github.com/vjpd07" target="_blank" class="contact-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/aditya-gaurav-160966354/" target="_blank" class="contact-link">LinkedIn</a>
+            </div>
+            
+            <div class="contact-section">
+                <div class="command-prompt">$ contact info</div>
+                <p>Feel free to reach out to me through any of the links above. I'm always open to connecting, discussing projects, or potential opportunities.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
