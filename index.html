@@ -14,6 +14,31 @@
       src: url('https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js');
       
     }
+    ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 3px;
+  border: none;
+  height: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #555 transparent;
+}
     
     body {
       background-color: #000;
@@ -236,5 +261,6 @@
       });
     });
   </script>
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 </body>
 </html>
