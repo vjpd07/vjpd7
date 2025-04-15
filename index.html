@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Site</title>
+  <title>vjpd_</title>
   <link rel="icon" type="image/x-icon" href="pfp.jpg">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
     
-    /* Use Envy Code R for UI elements and headings */
+    
     @font-face {
       font-family: 'Envy Code R';
       src: url('https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js');
-      /* Note: This is a placeholder. Envy Code R should be properly loaded in production */
+      
     }
     
     body {
@@ -164,7 +164,7 @@
 </head>
 <body>
   <header>
-    <h1>yourname</h1>
+    <h1>Aditya</h1>
     <nav>
       <a href="#" class="nav-link active" data-target="about">about</a>
       <a href="#" class="nav-link" data-target="blog">blog</a>
@@ -174,28 +174,26 @@
   
   <div id="about" class="content active">
     <div class="profile-pic">
-        <img src="pfp.jpg" alt="profile pic" style="width:150px;height:150px;">
+        <img src="pfp.jpg" alt="profile pic" style="width:140px;height:140px;">
     </div>
     
-    <p>Machine learning researcher and software developer focused on neural networks and reinforcement learning. Currently working on improving interpretability in deep learning models.</p>
+    <p>Hi my name is Aditya. Ive just gotten out of school currently prepping for entrances.</p>
+    <p>I currently have 0 skills and this is a site where i slowly show them growing</p>
+    <p>0 to 1 ig</p>
     
-    <p>Previously worked at [company] developing [project]. Graduate of [university] with a background in computer science and mathematics.</p>
-    
-    <p>working on machine learning</p>
-    <p><a href="#" target="_blank">x.com</a></p>
     
     <div class="social-links">
-      <a href="#" target="_blank">github</a>
-      <a href="#" target="_blank">twitter</a>
-      <a href="#" target="_blank">linkedin</a>
-      <a href="mailto:your.email@example.com">email</a>
+      <a href="#" target="https://github.com/vjpd07">github</a>
+      <a href="#" target="x.com/vjpd7_">twitter</a>
+      <a href="#" target="https://www.linkedin.com/in/aditya-gaurav-160966354/">linkedin</a>
+      <a href="mailto:vjpd2107@proton.me">email</a>
     </div>
     
     <div class="terminal">
       <p class="command">$ whoami</p>
-      <p>yourname</p>
+      <p>Aditya</p>
       <p class="command">$ cat /etc/interests</p>
-      <p>machine learning, neural networks, minimalism, open source</p>
+      <p>Artificial Intelligence, Electronics, Physics, Calisthenincs, minimalism, open source, one piece, hopecore, esoteric shitpoasting on x</p>
       <span class="command">$ _</span><span class="cursor"></span>
     </div>
     
@@ -203,46 +201,21 @@
   
   <div id="blog" class="content">
     <h2>blog</h2>
-    <ul>
-      <li><span class="date">20240415</span> <a href="#">exploring reinforcement learning</a></li>
-      <li><span class="date">20240402</span> <a href="#">thoughts on transformer architectures</a></li>
-      <li><span class="date">20240315</span> <a href="#">building neural networks from scratch</a></li>
-      <li><span class="date">20240228</span> <a href="#">gradient descent explained</a></li>
-      <li><span class="date">20240215</span> <a href="#">the future of generative AI</a></li>
-      <li><span class="date">20240130</span> <a href="#">learning rate scheduling techniques</a></li>
-    </ul>
+    
+    <h3><b>BUILDING</b></h3>
     
     <div class="terminal">
       <p class="command">$ cat latest_post.md</p>
-      <p>
-        # exploring reinforcement learning<br>
-        date: 2024-04-15<br><br>
-        
-        exploring how agents learn optimal behaviors through<br>
-        interaction with environments. key concepts: policy<br>
-        optimization, value functions, and temporal difference<br>
-        learning...<br>
-      </p>
     </div>
   </div>
   
   <div id="projects" class="content">
     <h2>projects</h2>
-    <ul>
-      <li><span class="date">20240410</span> <a href="#">personal knowledge base</a> - a minimal markdown-based system for organizing research notes</li>
-      <li><span class="date">20240325</span> <a href="#">minimal markdown editor</a> - distraction-free writing environment with live preview</li>
-      <li><span class="date">20240215</span> <a href="#">ml experiment tracker</a> - lightweight tool for monitoring deep learning experiments</li>
-      <li><span class="date">20240130</span> <a href="#">neural network visualizer</a> - interactive visualization of neural network architectures</li>
-    </ul>
+    
+    <p><h3><b>BUILDING</b></h3></p>
     
     <div class="terminal">
       <p class="command">$ ls -la projects/</p>
-      <p>
-        drwxr-xr-x  personal-kb<br>
-        drwxr-xr-x  markdown-editor<br>
-        drwxr-xr-x  ml-tracker<br>
-        drwxr-xr-x  nn-viz<br>
-      </p>
     </div>
   </div>
 
@@ -254,11 +227,11 @@
         link.addEventListener('click', function(e) {
           e.preventDefault();
           
-          // Remove active class from all links and contents
+          
           navLinks.forEach(l => l.classList.remove('active'));
           document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
           
-          // Add active class to clicked link and corresponding content
+          
           this.classList.add('active');
           const targetId = this.getAttribute('data-target');
           document.getElementById(targetId).classList.add('active');
